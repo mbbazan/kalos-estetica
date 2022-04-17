@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Roboto font */
+
+body {
+  background: white;
+  font-family: "roboto";
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.navbar {
+  grid-area: navbar;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 2fr 0.25fr;
+  grid-gap: 1em;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+}
+
+/* navbar styles */
+
+.navbar {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-self: left;
+  margin: 0 0 0 0.45em;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo a {
+  color: pink;
+  text-decoration: none;
+  letter-spacing: 0.45rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover,
+.active {
+  background-color: pink;
+}
+
+.logo img {
+  width: 100px;
+  vertical-align: middle;
+}
+
+/* navbar styles end */
+
+/* contact styles */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.contact {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+.contact__form__header {
+  color: pink;
+}
+
+.contact__form__feedback_input {
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 2px solid pink;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  outline: 0;
+}
+
+.contact__form__feedback_select {
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 2px solid pink;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  outline: 0;
+}
+
+select:invalid{
+  color: gray;
+}
+option{
+  color: black;
+}
+
+.contact__form__feedback_input:focus {
+  border: 5px solid pink;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"], [type="reset"], [type="button"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover, [type="reset"]:hover, [type="button"]:hover {
+  background: #cc4949;
+}
+
+
+/* contact styles end*/
+
+/* footer styles */
+
+.footer ul {
+  display: flex;
+  padding: 1.25rem;
+  text-align: center;
+  justify-content: center;
+  background: #111;
+}
+
+.footer ul li {
+  list-style-type: none;
+  margin: 0.25rem 0.75rem;
+}
+
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: center;
+  justify-content: center;
+  background: #444;
+}
+
+.footer__content h3 {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+/* footer styles end */
+
+@media all and (max-width: 900px) {
+  /* navbar styles */
+  .logo {
+    margin: 0.25em 0;
+    align-self: left;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .nav-item {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* navbar styles end*/
+}
