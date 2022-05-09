@@ -26,6 +26,9 @@ footer {
   grid-template-areas: "header" "main" "footer";
   height: 100vh; }
 
+.navbar {
+  background-color: #f8cdd4; }
+
 /* main styles */
 .imageList {
   display: flex;
@@ -46,6 +49,18 @@ footer {
     font-size: 50px;
     padding: 1.25rem;
     text-align: center; }
+
+.Servicios_content {
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem; }
+
+h1 {
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold; }
 
 /* main styles end */
 /* footer styles */
