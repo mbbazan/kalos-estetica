@@ -1,3 +1,40 @@
+.custom-button, .button-primary, .button-warning, .button-todo {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none; }
+  .custom-button:hover, .button-primary:hover, .button-warning:hover, .button-todo:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px); }
+  .custom-button:active, .button-primary:active, .button-warning:active, .button-todo:active {
+    transform: translateY(-1px); }
+
+.button-primary {
+  background-color: #f8cdd4; }
+  .button-primary:hover {
+    background-color: #e95d74; }
+
+.button-warning {
+  background-color: #fc6262; }
+  .button-warning:hover {
+    background-color: #fb0707; }
+
+.button-todo {
+  background-color: #69c169; }
+  .button-todo:hover {
+    background-color: #3fc33f; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -50,7 +87,7 @@ footer {
     padding: 1.25rem;
     text-align: center; }
 
-.Servicios_content {
+.title {
   padding: 2rem;
   text-align: center;
   justify-content: center;
